@@ -193,7 +193,7 @@ class Ui_Dialog(object):
     
     def promptsFormTrue(self,  text):
         if text == 'ok':
-            self.msgBox = QMessageBox(QMessageBox.Information , "问道端口扫描", "区组信息配置修改成功！")
+            self.msgBox = QMessageBox(QMessageBox.Information , "端口扫描", "区组信息配置修改成功！")
             self.reply = self.msgBox.addButton(self.tr("确定"),  QMessageBox.YesRole)
             self.msgBox.setWindowIcon(QtGui.QIcon('asktao.ico'))
             self.msgBox.exec_()
@@ -204,7 +204,7 @@ class Ui_Dialog(object):
 
     
     def promptsFormFalse(self):
-        self.msgBox = QMessageBox(QMessageBox.Warning,  "问道端口扫描",  "修改失败，信息配置有误请重新输入！")
+        self.msgBox = QMessageBox(QMessageBox.Warning,  "端口扫描",  "修改失败，信息配置有误请重新输入！")
         self.reply = self.msgBox.addButton(self.tr("确定"),  QMessageBox.YesRole)
         self.msgBox.setWindowIcon(QtGui.QIcon('asktao.ico'))
         self.msgBox.exec_()
