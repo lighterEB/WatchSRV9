@@ -28,7 +28,7 @@ class MainForm(QMainWindow,  Ui_MainWindow):
         
     
     def showTime(self):
-        txt = '''     更新维护by：胡尚鹏程'''
+        txt = '''     更新维护by：DaddyHu_CN'''
         time =  QDateTime.currentDateTime()
         timeDisplay = time.toString("yyyy-MM-dd hh:mm:ss dddd")
         self.author.setText(txt+'\n'+timeDisplay)
