@@ -285,7 +285,7 @@ class Ui_MainWindow(object):
         self.action_S.setStatusTip("关闭所有端口扫描")
         self.action_O.setStatusTip("打开所有声音")
         self.action_F.setStatusTip("关闭所有声音")
-        txt = '''     更新维护by：胡尚鹏程'''
+        txt = '''     更新维护by：DaddyHu_CN'''
         time =  QDateTime.currentDateTime()
         timeDisplay = time.toString("yyyy-MM-dd hh:mm:ss dddd")
         self.author = QLabel(txt+'\n'+timeDisplay)
@@ -349,7 +349,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
     
     def closeEvent(self,  event):
-        self.msgBox = QMessageBox(QMessageBox.Question, '提示', '日志可以在ErrorLog文件夹查看，是否退出问道端口扫描？')
+        self.msgBox = QMessageBox(QMessageBox.Question, '提示', '日志可以在ErrorLogs文件夹查看，是否退出问道端口扫描？')
         self.msgBox.setWindowIcon(QtGui.QIcon('asktao.ico'))
         self.msgBox.setStandardButtons(QMessageBox.Yes|QMessageBox.No)
         okBtn = self.msgBox.button(QMessageBox.Yes)
@@ -366,8 +366,8 @@ class Ui_MainWindow(object):
         
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "《问道》端口扫描程序"))
-        self.groupBox_7.setTitle(_translate("MainWindow", "<问道AAA_8001>"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "《》端口扫描程序"))
+        self.groupBox_7.setTitle(_translate("MainWindow", "<AAA_8001>"))
         self.label.setText(_translate("MainWindow", "准备扫描..."))
         self.pushButton_19.setText(_translate("MainWindow", "扫描"))
         self.pushButton_20.setText(_translate("MainWindow", "停止"))
@@ -375,31 +375,31 @@ class Ui_MainWindow(object):
         
         
 
-        self.groupBox_8.setTitle(_translate("MainWindow", "<问道DBA_9030>"))
+        self.groupBox_8.setTitle(_translate("MainWindow", "<DBA_9030>"))
         self.label_6.setText(_translate("MainWindow", "准备扫描..."))
         self.pushButton_22.setText(_translate("MainWindow", "扫描"))
         self.pushButton_23.setText(_translate("MainWindow", "停止"))
         self.pushButton_24.setText(_translate("MainWindow", "打开声音"))
 
-        self.groupBox_4.setTitle(_translate("MainWindow", "<问道SPA_9040>"))
+        self.groupBox_4.setTitle(_translate("MainWindow", "<SPA_9040>"))
         self.label_2.setText(_translate("MainWindow", "准备扫描..."))
         self.pushButton_10.setText(_translate("MainWindow", "扫描"))
         self.pushButton_11.setText(_translate("MainWindow", "停止"))
         self.pushButton_12.setText(_translate("MainWindow", "打开声音"))
 
-        self.groupBox_3.setTitle(_translate("MainWindow", "<问道CCS_9020>"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "<CCS_9020>"))
         self.label_5.setText(_translate("MainWindow", "准备扫描..."))
         self.pushButton_7.setText(_translate("MainWindow", "扫描"))
         self.pushButton_8.setText(_translate("MainWindow", "停止"))
         self.pushButton_9.setText(_translate("MainWindow", "打开声音"))
 
-        self.groupBox_6.setTitle(_translate("MainWindow", "<问道GS_9010>"))
+        self.groupBox_6.setTitle(_translate("MainWindow", "<GS_9010>"))
         self.label_3.setText(_translate("MainWindow", "准备扫描..."))
         self.pushButton_16.setText(_translate("MainWindow", "扫描"))
         self.pushButton_17.setText(_translate("MainWindow", "停止"))
         self.pushButton_18.setText(_translate("MainWindow", "打开声音"))
 
-        self.groupBox_5.setTitle(_translate("MainWindow", "<问道TTS_9050>"))
+        self.groupBox_5.setTitle(_translate("MainWindow", "<TTS_9050>"))
         self.label_4.setText(_translate("MainWindow", "准备扫描..."))
         self.pushButton_13.setText(_translate("MainWindow", "扫描"))
         self.pushButton_14.setText(_translate("MainWindow", "停止"))
@@ -841,7 +841,7 @@ class Ui_MainWindow(object):
 2、更改了区组获取方式，新增了排除区组的功能，优化了扫描线程。
 3、默认报警声音未开启，可以手动开启报警提示。
                                 
-                                       问题反馈请联系胡尚鹏程
+                                       
                                               2018-12-16'''
         self.msg = QMessageBox(QMessageBox.Information,"说明", doc )
         self.msg.setWindowIcon(QtGui.QIcon('asktao.ico'))
