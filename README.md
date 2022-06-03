@@ -4,7 +4,7 @@ PortScanner for asktao
 # Description
 #						                                         
 #		            Date ：2018-12-26		                 
-#	             Author: Hu Shangpengcheng	            
+#	             Author: 0xT0s1x7	            
 #         Environment: Win7(10) + Python3.7 + PyQt5   
 #      Brief description of how to package into exe   
 #						                                          
